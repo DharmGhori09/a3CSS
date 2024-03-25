@@ -1,0 +1,187 @@
+body {
+    font-family: 'YourCustomFont', sans-serif;
+    background: linear-gradient(135deg, #2C3E50, #27AE60); /* Gradient background */
+    color: #333;
+    margin: 0;
+}
+
+header, main, section, footer {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+header {
+    background: linear-gradient(135deg, #2C3E50, #27AE60); /* Gradient background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background: #fff; /* White background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#imagery {
+    text-align: center;
+    background-color: #77dd77; /* Pastel green */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.sweet-flavours {
+    background-image: url('multi.jpg'); /* Replace 'your-image-url.jpg' with the URL of your image */
+    background-size: cover; /* Adjust the background size as needed */
+    background-position: center; /* Center the background image */
+    padding: 20px; /* Add padding to ensure content is visible */
+     
+}
+
+
+
+#imagery img {
+    width: 100%;
+    max-width: 48%;
+    height: auto;
+    display: inline-block;
+    margin-right: 2%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: scaleIn 0.5s ease-in-out;
+}
+
+#imagery img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: linear-gradient(135deg, #333333, #1F1F1F); /* Gradient background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #27AE60; /* Accent color green */
+}
+
+#company-info {
+    margin-top: 20px;
+}
+
+#contact-form {
+    max-width: 400px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+#contact-form input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+#contact-form input[type="submit"] {
+    background: #27AE60; /* Accent color green */
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact-form input[type="submit"]:hover {
+    background: #2ECC71; /* Darker green */
+}
+
+#company-info,
+#contact-form label,
+#contact-form input,
+#address {
+    color: #333;
+}
+
+#address {
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.nutrition-table-container {
+    margin-right: 20px;
+}
+
+#carbs-table,
+#fat-table,
+#protein-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#carbs-table th,
+#carbs-table td,
+#fat-table th,
+#fat-table td,
+#protein-table th,
+#protein-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#carbs-table th,
+#fat-table th,
+#protein-table th {
+    background-color: #27AE60; /* Accent color green */
+    color: white;
+}
+
+/* Animation for images */
+@keyframes scaleIn {
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1);
+    }
+}
